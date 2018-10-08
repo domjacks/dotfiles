@@ -62,7 +62,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm osx docker)
+plugins=(git npm osx docker zsh-completions zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,6 +101,9 @@ export DEFAULT_USER=$USER
 
 # Run Fortune, Cowsay and Lolcat
 fortune | cowsay | lolcat
+
+# Zsh Completion
+autoload -U compinit && compinit
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
