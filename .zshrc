@@ -100,7 +100,7 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 export DEFAULT_USER=$USER
 
 # Run Fortune, Cowsay and Lolcat
-fortune | cowsay | lolcat
+figlet -f slant "oh-my-zsh" | lolcat
 
 # Zsh Completion
 autoload -U compinit && compinit

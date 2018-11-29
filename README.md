@@ -7,9 +7,8 @@ These files should be used on UNIX-based systems such as Linux or OSX. Place the
 ### Packages
 * nvm
 * cURL
-* fortune
+* figlet
 * lolcat
-* cowsay
 
 
 ### Zsh
