@@ -12,8 +12,6 @@ plugins=(git npm osx docker zsh-completions zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-if [ "$TMUX" = "" ]; then tmux; fi
-
 # User configuration
 
 # Brew installs
