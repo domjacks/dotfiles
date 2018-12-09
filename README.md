@@ -35,4 +35,4 @@ In order to use the `.zshrc` you will need [oh-my-zsh](https://github.com/robbyr
 
 #### Oh my Zsh Plugins
 * [zsh-completions](https://github.com/zsh-users/zsh-completions)
-* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
