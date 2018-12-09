@@ -17,7 +17,8 @@ These files should be used on UNIX-based systems such as Linux or OSX. Place the
 * fzf - Fuzzy finder
 
 ### Vim
-In order to use the async feature for plugins, you need to running at least Vim8. Simply clone the git repos into `.vim/pack/<plugins-location>/start/` for them to be loaded at start time when running Vim. 
+In order to use the async feature for plugins, you need to running at least Vim8.
+Simply clone the git repos into `~/.vim/pack/my-plugins/start/` for them to be loaded at start time when running Vim. 
 
 #### Vim Plugins
 * [ale](https://github.com/w0rp/ale) - Linting
