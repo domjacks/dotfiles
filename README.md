@@ -22,7 +22,7 @@ In order to use the async feature for plugins, you need to running at least Vim8
 #### Vim Plugins
 * [ale](https://github.com/w0rp/ale) - Linting
 * [fzf.vim](https://github.com/junegunn/fzf.vim) - Fuzzy find
-* [lightline.vim](https://github.com/itchyny/lightline.vim) - Status line
+* [vim-airline](https://github.com/tpope/vim-airline) - Status line
 * [vim-commentary](https://github.com/tpope/vim-commentary) - Comment out chunks
 * [vim-javascript](https://github.com/pangloss/vim-javascript) - Javascript syntax highlighting
 * [vim-surround](https://github.com/tpope/vim-surround) - Easily add parenthesis/quotes
