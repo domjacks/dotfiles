@@ -34,5 +34,5 @@ In order to use the async feature for plugins, you need to running at least Vim8
 In order to use the `.zshrc` you will need [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) installed along with the [powerline fonts](https://github.com/powerline/fonts).
 
 #### Oh my Zsh Custom Plugins
-* [zsh-completions](https://github.com/zsh-users/zsh-completions)
-* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* [zsh-completions](https://github.com/zsh-users/zsh-completions) - Extra autocompletions
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like autosuggestions
