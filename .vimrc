@@ -21,3 +21,14 @@ set t_Co=256
 set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
+
+" fzf runtimepath
+set rtp+=/usr/local/opt/fzf
+
+" Mappings
+
+" NERDTree
+map <C-o> :NERDTreeToggle<CR>
+
+" FZF
+map <C-f> :Files<CR>
