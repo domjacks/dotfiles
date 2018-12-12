@@ -39,3 +39,5 @@ In order to use the `.zshrc` you will need [oh-my-zsh](https://github.com/robbyr
 
 ### Tmux
 In order to use the `.tmux.conf` you will need to use the [tmux plugin manager](https://github.com/tmux-plugins/tpm). Simply run `prefix + I` to fetch the plugin.
+
+* [tmux-spotify](https://github.com/robhurring/tmux-spotify) - Shows currently playing Spotify song
