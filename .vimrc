@@ -38,3 +38,26 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+call plug#begin()
+
+" Linting
+Plug 'w0rp/ale'
+
+" Fuzzy Find
+Plug 'junegunn/fzf.vim'
+
+" Language Support
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
+" Tools
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+
+" Style/Theming
+Plug 'tpope/vim-airline'
+
+call plug#end()
