@@ -15,6 +15,7 @@ These files should be used on UNIX-based systems such as Linux or OSX. Place the
 * figlet - ASCII text banner generator
 * lolcat - Print out colours
 * fzf - Fuzzy finder
+* hub - Github utility tool
 
 ### Vim
 In order to install the Vim plugins listed below, you will need to use the [vim-plug](https://github.com/junegunn/vim-plug) plugin manager. Simply run `:PlugInstall` within Vim to install the plugins.  

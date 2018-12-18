@@ -29,6 +29,9 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 # Set Default User for agnoster zsh theme
 export DEFAULT_USER=$USER
 
+# hub alias
+eval "$(hub alias -s)"
+
 # Run Fortune, Cowsay and Lolcat
 figlet -f slant "oh-my-zsh" | lolcat
 
