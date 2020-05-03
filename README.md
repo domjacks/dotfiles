@@ -5,15 +5,12 @@ Set of personal dotfiles for configuring my workspace.
 These files should be used on UNIX-based systems such as Linux or OSX. Place them in your `~/` directory and reload the applications for them to be loaded in.
 
 ### Required Packages
-* brew - OSX Package manager
 * tmux - Terminal Multiplexer
 * zsh - Alternative shell environment
 * vim - Text editor
 * git - Version control
 * nvm - Node Version Manager
 * curl - Data transfer tool
-* figlet - ASCII text banner generator
-* lolcat - Print out colours
 * fzf - Fuzzy finder
 * hub - Github utility tool
 
@@ -38,8 +35,3 @@ In order to use the `.zshrc` you will need [oh-my-zsh](https://github.com/robbyr
 * [zsh-completions](https://github.com/zsh-users/zsh-completions) - Extra autocompletions
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Fish-like autosuggestions
 
-### Tmux
-In order to use the `.tmux.conf` you will need to use the [tmux plugin manager](https://github.com/tmux-plugins/tpm). Simply run `prefix + I` to fetch the plugin.
-
-* [tmux-spotify](https://github.com/robhurring/tmux-spotify) - Shows currently playing Spotify song
-* [tmux-battery](https://github.com/tmux-plugins/tmux-battery) - Battery status icon
