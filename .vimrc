@@ -22,16 +22,10 @@ set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 
-" fzf runtimepath
-set rtp+=/usr/local/opt/fzf
-
 " Mappings
 
 " NERDTree
 map <C-o> :NERDTreeToggle<CR>
-
-" FZF
-map <C-f> :Files<CR>
 
 " Better Nav
 nnoremap <C-J> <C-W><C-J>
@@ -41,11 +35,11 @@ nnoremap <C-H> <C-W><C-H>
 
 call plug#begin()
 
+" Ctrl-p
+Plug 'kien/ctrlp.vim'
+
 " Linting
 Plug 'w0rp/ale'
-
-" Fuzzy Find
-Plug 'junegunn/fzf.vim'
 
 " Language Support
 Plug 'pangloss/vim-javascript'
@@ -58,6 +52,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 
 " Style/Theming
-Plug 'tpope/vim-airline'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()

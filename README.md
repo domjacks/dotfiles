@@ -9,18 +9,14 @@ These files should be used on UNIX-based systems such as Linux or OSX. Place the
 * zsh - Alternative shell environment
 * vim - Text editor
 * git - Version control
-* nvm - Node Version Manager
 * curl - Data transfer tool
-* fzf - Fuzzy finder
-* hub - Github utility tool
 
 ### Vim
 In order to install the Vim plugins listed below, you will need to use the [vim-plug](https://github.com/junegunn/vim-plug) plugin manager. Simply run `:PlugInstall` within Vim to install the plugins.  
 
 #### Vim Plugins
 * [ale](https://github.com/w0rp/ale) - Linting
-* [fzf.vim](https://github.com/junegunn/fzf.vim) - Fuzzy find
-* [vim-airline](https://github.com/tpope/vim-airline) - Status line
+* [vim-airline](https://github.com/vim-airline/vim-airline) - Status line
 * [vim-commentary](https://github.com/tpope/vim-commentary) - Comment out chunks
 * [vim-javascript](https://github.com/pangloss/vim-javascript) - Javascript syntax highlighting
 * [vim-surround](https://github.com/tpope/vim-surround) - Easily add parenthesis/quotes

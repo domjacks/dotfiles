@@ -8,7 +8,7 @@ export ZSH="~/.oh-my-zsh"
 ZSH_THEME="robbyrussel"
 
 # Which plugins would you like to load?
-plugins=(git npm docker zsh-completions zsh-autosuggestions)
+plugins=(git npm zsh-completions zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -18,17 +18,6 @@ if [ "$TMUX" = "" ]; then tmux; fi
 
 # Brew installs
 #export PATH="/usr/local/bin:$PATH"
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Set Default User for agnoster zsh theme
-export DEFAULT_USER=$USER
-
-# hub alias
-eval "$(hub alias -s)"
 
 # Zsh Completion
 autoload -U compinit && compinit
