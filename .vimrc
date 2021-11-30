@@ -38,7 +38,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_STORE\|git\|dist'
 call plug#begin()
 
 " Ctrl-p
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Linting
 Plug 'w0rp/ale'
