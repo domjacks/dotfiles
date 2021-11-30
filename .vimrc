@@ -17,7 +17,7 @@ set wrap
 set laststatus=2
 
 " Color Scheme
-set t_Co=256
+set t_CO=256
 set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
@@ -32,6 +32,8 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_STORE\|git\|dist'
 
 call plug#begin()
 
