@@ -17,15 +17,15 @@ set wrap
 set laststatus=2
 
 " Color Scheme
-set t_CO=256
+set t_Co=256
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
 
 " Mappings
 
 " NERDTree
-map <C-o> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " Better Nav
 nnoremap <C-J> <C-W><C-J>
@@ -55,5 +55,9 @@ Plug 'scrooloose/nerdtree'
 
 " Style/Theming
 Plug 'vim-airline/vim-airline'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
+
+colorscheme nord
+
