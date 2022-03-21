@@ -40,12 +40,9 @@ call plug#begin()
 " Ctrl-p
 Plug 'ctrlpvim/ctrlp.vim'
 
-" Linting
-Plug 'w0rp/ale'
-
 " Language Support
+Plug 'dense-analysis/ale'
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 
 " Tools
 Plug 'tpope/vim-commentary'
