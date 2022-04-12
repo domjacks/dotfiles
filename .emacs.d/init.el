@@ -7,7 +7,7 @@
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes '(tsdh-dark))
  '(package-selected-packages
-   '(vterm company lsp-treemacs lsp-ui lsp-ivy treemacs projectile magit lsp-mode exec-path-from-shell counsel)))
+   '(flycheck vterm company lsp-treemacs lsp-ui lsp-ivy treemacs projectile magit lsp-mode exec-path-from-shell counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -64,8 +64,13 @@
 (setq lsp-ui-sideline-show-diagnostics t)
 (setq lsp-ui-sideline-show-hover t)
 ;(setq lsp-ui-sideline-show-code-actions t)
-;(setq lsp-ui-sideline-update-mode 'line)
+(setq lsp-ui-sideline-update-mode 'line)
 (setq lsp-ui-sideline-delay '3)
+
+; Flycheck
+(setq lsp-prefer-flymake nil)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
 
 ;Set $PATH for shell
 (require 'exec-path-from-shell)
