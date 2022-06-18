@@ -30,10 +30,9 @@ Plug 'williamboman/nvim-lsp-installer'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/nvim-cmp'
-" For luasnip users.
+" Snippets
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
-
 " Styling
 Plug 'vim-airline/vim-airline'
 Plug 'gruvbox-community/gruvbox'
@@ -44,9 +43,12 @@ colorscheme gruvbox
 let mapleader = " "
 
 " Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+"lua require("telescope-config")
+nnoremap <leader>ff <cmd>Telescope git_files<cr>
+nnoremap <leader>fa <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 lua require("lsp")
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }}
