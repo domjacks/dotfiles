@@ -20,6 +20,9 @@ set signcolumn=yes
 set completeopt=menu,menuone,noselect
 
 call plug#begin()
+" File tree
+Plug 'preservim/nerdtree'
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim'
@@ -43,12 +46,12 @@ colorscheme gruvbox
 let mapleader = " "
 
 " Find files using Telescope command-line sugar.
-"lua require("telescope-config")
 nnoremap <leader>ff <cmd>Telescope git_files<cr>
 nnoremap <leader>fa <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>ft :NERDTreeToggle<cr>
 
 lua require("lsp")
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }}
