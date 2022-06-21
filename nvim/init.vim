@@ -18,6 +18,7 @@ set termguicolors
 set scrolloff=8
 set signcolumn=yes
 set completeopt=menu,menuone,noselect
+set mouse=a
 
 call plug#begin()
 Plug 'preservim/nerdtree'
