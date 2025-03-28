@@ -19,4 +19,4 @@ eval "$(fnm env --use-on-cd)"
 FNM_ARCH=x64
 
 # Aliases
-alias ff="fzf | xargs nvim"
+alias ff="fzf-tmux -p | xargs nvim"
