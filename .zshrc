@@ -1,23 +1,22 @@
-# Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-
-# Which plugins would you like to load?
-plugins=(git npm zsh-completions zsh-autosuggestions)
-
+plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
+
+# zsh-autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 if [ "$TMUX" = "" ]; then tmux; fi
 
 # User configuration
 
-# Brew installs
-#export PATH="/usr/local/bin:$PATH"
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Zsh Completion
-autoload -U compinit && compinit
+# FNM
+source $ZSH/oh-my-zsh.sh
+eval "$(fnm env --use-on-cd)"
+FNM_ARCH=x64
+
+# Aliases
+alias ff="fzf | xargs nvim"
