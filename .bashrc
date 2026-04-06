@@ -11,7 +11,7 @@ fif() {
 
 alias ff="fzf-tmux -p | xargs nvim"
 
-PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\e[92m\]\[\e[0m\] \[\e[96;1m\]\W\[\e[0m\] \[\e[91m\]${PS1_CMD1}\[\e[0m\] '
+PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\e[92m\]\$\[\e[0m\] \[\e[96;1m\]\W\[\e[0m\] \[\e[91m\]${PS1_CMD1}\[\e[0m\] '
 
 alias gst="git status"
 alias gl="git pull"
