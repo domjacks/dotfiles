@@ -11,12 +11,7 @@ fif() {
 
 alias ff="fzf-tmux -p | xargs nvim"
 
-# Git
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-
-export PS1="\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
+PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\e[92m\]\[\e[0m\] \[\e[96;1m\]\W\[\e[0m\] \[\e[91m\]${PS1_CMD1}\[\e[0m\] '
 
 alias gst="git status"
 alias gl="git pull"
